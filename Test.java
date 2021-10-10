@@ -3,7 +3,7 @@ class Test {
 		int sol = solution(nums);
 		int testNaive = trading_Naive.maxProfit(nums);
 		int testOnepass = trading_Onepass.maxProfit(nums);
-		return testNaive == sol && testOnepass == sol;
+		return testNaive == sol && testOnepass == sol && testNaive == testOnepass;
 	}
 	
 	private static int solution(int[] prices) {
