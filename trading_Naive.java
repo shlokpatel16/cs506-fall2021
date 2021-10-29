@@ -4,7 +4,7 @@ public class trading_Naive {
         // enumerate all possible buy dates
         for (int buyDate = 0; buyDate < prices.length - 1; buyDate++) {
             // enumerate all possible sell dates
-            for (int sellDate = buyDate; sellDate < prices.length; sellDate++) {
+            for (int sellDate = buyDate + 1; sellDate < prices.length; sellDate++) {
                 int profit = prices[sellDate] - prices[buyDate];
                 if (profit > maxprofit)
                     maxprofit = profit;
